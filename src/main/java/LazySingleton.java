@@ -6,6 +6,9 @@ public class LazySingleton {
         this.id = String.valueOf(i);
     }
     public static LazySingleton getInstance(int i) {
+        if (instance == null) {
+            instance = new LazySingleton(i);
+        }
         return instance;
     }
 
