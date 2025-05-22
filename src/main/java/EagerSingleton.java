@@ -5,11 +5,11 @@ public class EagerSingleton {
             INSTANCES[i] = new EagerSingleton(i);
         }
     }
-    private final int id;
+    private final String id;
 
 
     private EagerSingleton(int id) {
-        this.id = id;
+        this.id = Integer.toString(id);
     }
 
     public static EagerSingleton getInstance(int idx) {
@@ -22,6 +22,6 @@ public class EagerSingleton {
     }
 
     public String getId() {
-        return Integer.toString(this.id);
+        return this.id;
     }
 }

@@ -1,15 +1,19 @@
 public class LazySingleton {
-    private static LazySingleton instance;
+    private static LazySingleton[] INSTANCES = new LazySingleton[3];
     private final String id;
 
-    private LazySingleton(int i){
+    private LazySingleton(int i) {
         this.id = String.valueOf(i);
     }
-    public static LazySingleton getInstance(int i) {
-        if (instance == null) {
-            instance = new LazySingleton(i);
+
+    public static LazySingleton getInstance(int idx) {
+        if (idx < 0 || idx >= INSTANCES.length) {
+            throw new IllegalArgumentException();
         }
-        return instance;
+        if (INSTANCES[idx] == null) {
+            INSTANCES[idx] = new LazySingleton(idx);
+        }
+        return INSTANCES[idx];
     }
 
     public String getId() {
