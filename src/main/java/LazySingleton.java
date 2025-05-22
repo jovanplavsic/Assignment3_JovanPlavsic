@@ -12,6 +12,7 @@ public class LazySingleton {
         }
         if (INSTANCES[idx] == null) {
             INSTANCES[idx] = new LazySingleton(idx);
+            System.out.println("Lazy Singleton " + idx + " instantiated");
         }
         return INSTANCES[idx];
     }

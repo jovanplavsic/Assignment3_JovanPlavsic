@@ -3,6 +3,7 @@ public class EagerSingleton {
     static {
         for (int i = 0; i < INSTANCES.length; i++) {
             INSTANCES[i] = new EagerSingleton(i);
+            System.out.println("Eager Singleton " + i + " instantiated");
         }
     }
     private final String id;
