@@ -1,5 +1,6 @@
 package Factories;
 
+import Animals.Triassic.*;
 import Animals.LandAnimal;
 import Animals.SeaAnimal;
 import Animals.SkyAnimal;
@@ -15,16 +16,16 @@ public class TriassicAnimalFactory implements AnimalAbstractFactory{
 
     @Override
     public List<LandAnimal> createLandAnimals() {
-        return Arrays.asList();
+        return Arrays.asList(new Plateosaurus(), new Coelophysis());
     }
 
     @Override
     public List<SeaAnimal> createSeaAnimals() {
-        return Arrays.asList();
+        return Arrays.asList(new Tanystropheus(), new Nothosaurus());
     }
 
     @Override
     public List<SkyAnimal> createSkyAnimals() {
-        return Arrays.asList();
+        return Arrays.asList(new Preondactylus(), new Eudimorphodon());
     }
 }
