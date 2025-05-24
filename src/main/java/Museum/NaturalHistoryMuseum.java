@@ -4,13 +4,14 @@ import Animals.SkyAnimal;
 import Factories.AnimalAbstractFactory;
 import Factories.JurassicAnimalFactory;
 import Factories.CenozoicAnimalFactory;
+import Factories.TriassicAnimalFactory;
 
 import java.util.List;
 
 public class NaturalHistoryMuseum {
     public static void main(String[] args) {
         // set up the exhibit
-        AnimalAbstractFactory f = new JurassicAnimalFactory();
+        AnimalAbstractFactory f = new TriassicAnimalFactory();
         System.out.println("You are in the " + f.getEra() + " exhibition");
         System.out.println("===== " + f.getEra() + " land animals section =====");
         List<LandAnimal> landAnimals = f.createLandAnimals();
