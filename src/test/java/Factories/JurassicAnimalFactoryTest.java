@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TriassicAnimalFactoryTest {
+class JurassicAnimalFactoryTest {
 
     @Test
     void getEra() {
