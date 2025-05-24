@@ -2,6 +2,7 @@ import Animals.LandAnimal;
 import Animals.SeaAnimal;
 import Animals.SkyAnimal;
 import Factories.AnimalAbstractFactory;
+import Factories.JurassicAnimalFactory;
 import Factories.CenozoicAnimalFactory;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 public class NaturalHistoryMuseum {
     public static void main(String[] args) {
         // set up the exhibit
-        AnimalAbstractFactory f = new CenozoicAnimalFactory();
+        AnimalAbstractFactory f = new JurassicAnimalFactory();
         System.out.println("You are in the " + f.getEra() + " exhibition");
         System.out.println("===== " + f.getEra() + " land animals section =====");
         List<LandAnimal> landAnimals = f.createLandAnimals();
