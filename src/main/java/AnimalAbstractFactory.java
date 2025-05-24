@@ -1,19 +1,15 @@
+import Animals.LandAnimal;
+import Animals.SeaAnimal;
+import Animals.SkyAnimal;
+
 import java.util.List;
 
-public class AnimalAbstractFactory {
-    public String getEra() {
-        return null;
-    }
+public interface AnimalAbstractFactory {
+    String getEra();
 
-    List<LandAnimal> createLandAnimals() {
-        return null;
-    }
+    List<LandAnimal> createLandAnimals();
 
-    List<SeaAnimal> createSeaAnimals() {
-        return null;
-    }
+    List<SeaAnimal> createSeaAnimals();
 
-    List<SkyAnimal> createSkyAnimals() {
-        return null;
-    }
+    List<SkyAnimal> createSkyAnimals();
 }

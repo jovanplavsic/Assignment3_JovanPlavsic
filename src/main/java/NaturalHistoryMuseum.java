@@ -1,3 +1,7 @@
+import Animals.LandAnimal;
+import Animals.SeaAnimal;
+import Animals.SkyAnimal;
+
 import java.util.List;
 
 public class NaturalHistoryMuseum {
