@@ -1,7 +1,7 @@
 package Animals;
 
 public interface LandAnimal {
-    String getName();
+    public String getName();
 
-    String getWalking();
+    public String getWalking();
 }

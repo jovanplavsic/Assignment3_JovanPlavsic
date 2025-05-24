@@ -7,9 +7,9 @@ import java.util.List;
 public interface AnimalAbstractFactory {
     String getEra();
 
-    List<LandAnimal> createLandAnimals();
+    public List<LandAnimal> createLandAnimals();
 
-    List<SeaAnimal> createSeaAnimals();
+    public List<SeaAnimal> createSeaAnimals();
 
-    List<SkyAnimal> createSkyAnimals();
+    public List<SkyAnimal> createSkyAnimals();
 }

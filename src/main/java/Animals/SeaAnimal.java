@@ -1,6 +1,6 @@
 package Animals;
 
 public interface SeaAnimal {
-    String getName();
-    String getSwimming();
+    public String getName();
+    public String getSwimming();
 }

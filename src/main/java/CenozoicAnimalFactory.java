@@ -3,12 +3,12 @@ import Animals.*;
 import java.util.Arrays;
 import java.util.List;
 
-public class CenozoicAnimalFactory extends AnimalAbstractFactory {
+public class CenozoicAnimalFactory implements AnimalAbstractFactory {
 
     @Override
     public String getEra(){
         return "Cenozoic";
-    };
+    }
 
     @Override
     public List<LandAnimal> createLandAnimals() {
@@ -16,12 +16,12 @@ public class CenozoicAnimalFactory extends AnimalAbstractFactory {
     }
 
     @Override
-    List<SeaAnimal> createSeaAnimals(){
+    public List<SeaAnimal> createSeaAnimals(){
         return Arrays.asList(new Megalodon());
     }
 
     @Override
-    List<SkyAnimal> createSkyAnimals(){
+    public List<SkyAnimal> createSkyAnimals(){
         return Arrays.asList(new Bat());
     }
 }

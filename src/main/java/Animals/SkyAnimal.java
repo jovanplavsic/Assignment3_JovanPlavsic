@@ -1,6 +1,6 @@
 package Animals;
 
 public interface SkyAnimal {
-    String getName();
-    String getFlying();
+    public String getName();
+    public String getFlying();
 }
