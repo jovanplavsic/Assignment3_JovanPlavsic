@@ -4,7 +4,7 @@ import Animals.SkyAnimal;
 
 public class Bat implements SkyAnimal {
     public String getName(){
-        return "Megalodon";
+        return "Bat";
     }
 
     public String getFlying(){
