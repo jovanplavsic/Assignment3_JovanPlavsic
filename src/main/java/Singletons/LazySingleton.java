@@ -1,3 +1,5 @@
+package Singletons;
+
 public class LazySingleton {
     private static LazySingleton[] INSTANCES = new LazySingleton[3];
     private final String id;

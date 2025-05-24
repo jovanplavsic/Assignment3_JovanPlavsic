@@ -1,3 +1,5 @@
+package Singletons;
+
 public class EagerSingleton {
     private static EagerSingleton[] INSTANCES = new EagerSingleton[3];
     static {

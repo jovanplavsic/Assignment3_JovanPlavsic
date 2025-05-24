@@ -1,3 +1,5 @@
+package Singletons;
+
 import java.util.Random;
 
 public class Assignment3Singleton {
