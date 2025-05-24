@@ -1,6 +1,8 @@
-package Animals;
+package Animals.Cenozoic;
 
-public class Bat implements SkyAnimal{
+import Animals.SkyAnimal;
+
+public class Bat implements SkyAnimal {
     public String getName(){
         return "Megalodon";
     }

@@ -1,6 +1,8 @@
-package Animals;
+package Animals.Cenozoic;
 
-public class Megalodon implements SeaAnimal{
+import Animals.SeaAnimal;
+
+public class Megalodon implements SeaAnimal {
     public String getName(){
         return "Megalodon";
     }

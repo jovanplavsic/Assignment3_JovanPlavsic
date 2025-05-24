@@ -1,6 +1,9 @@
 package Factories;
 
 import Animals.*;
+import Animals.Cenozoic.Bat;
+import Animals.Cenozoic.Mamoth;
+import Animals.Cenozoic.Megalodon;
 
 import java.util.Arrays;
 import java.util.List;
